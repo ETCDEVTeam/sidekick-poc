@@ -1,4 +1,4 @@
-### Set up chain directories, keys, and authories.js file 
+### Set up chain directories, keys, and authories.js file
 
   514  cd sidekick/
   515  mkdir poc
@@ -11,9 +11,14 @@
   544  yes | for d in ./*-*; do geth --data-dir "$PWD" --chain "$d" account new; done
   545  tree
   549  touch authorities.js
-  552  touch authorities.js 
+  552  touch authorities.js
   553  for d in ./auth-*; do geth --data-dir "$PWD" --chain "$d" account list | cut -d'{' -f2 | cut -d'}' -f1 >> authorities.js ; done
-  554  cat authorities.js 
-  555  vim authorities.js 
+  554  cat authorities.js
+  555  vim authorities.js
 
+### Initialize shared configuration files
 
+  565  geth --chain morden dump-chain-config _chain.json
+  565.5  vim _chain.json
+  566  touch _flags.conf
+  507  npm install -g json
