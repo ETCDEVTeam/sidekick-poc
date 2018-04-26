@@ -1,4 +1,0 @@
-var authorities = [
-	"071d03f0c492ce5a3b5d8333f06e5155ffe0ff60",
-	"6241938632f37e1d22f8546d2b20780edf365f5a"
-];
