@@ -134,12 +134,12 @@ function ensureAuthorityAccount() {
 		authorityAccount = eth.accounts[0];
 	}
 	// TODO: dont have your password be yes, and dont pass it here
-	if (!personal.unlockAccount(authorityAccount, "yes", 0)) {
-			console.log("tx2poa", "AUTHORITY", "ERR ACCT LOCKED", "Running as minion instead...");
-			runMinion();
-		// FIXME: see above about exit not being defined
-		// exit;
-	}
+	// if (!personal.unlockAccount(authorityAccount, "yes", 0)) {
+	// 		console.log("tx2poa", "AUTHORITY", "ERR ACCT LOCKED", "Running as minion instead...");
+	// 		runMinion();
+	// 	// FIXME: see above about exit not being defined
+	// 	// exit;
+	// }
 	miner.setEtherbase(authorityAccount);
 	console.log("tx2poa", "AUTHORITY", "INIT", authorityAccount);
 	return true;
