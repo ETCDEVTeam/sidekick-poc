@@ -1,75 +1,258 @@
-e9b23b[::]:30305 ensureing auth
-e9b23b[::]:30305 tx2poa AUTHORITY INIT 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3 true
-e9b23b[::]:30305 tx2poa VALIDATE OK(GENESIS) 0
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 0
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0xc3b4ef 
-    block.number: 0 
-    sig: 0x7ae429fffa754701682514b7572a30a0ea998675b45905a3bc46e77ae9ee4fda4eea9cf8a3a9f3099678d68fb2fadd0f972daffa89ea234d9705789d3dced1961b
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0xc3b4ef855a3aeb0f42f9b1bbe4bdfe66178b4f49186b380a5776619f284b83ca 7b22
-    validating sig: 0xf542661149861bde05ac316ca0f38a4afda38a8f2eaf1e7734084ec271cb57ec58f7eefdedd7946bce319307822864e781fe80edc59f1fa2ca34689d32fdf7f01c
-    block_number  : 0
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 1
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0xc4b02c 
-    block.number: 1 
-    sig: 0x6a8c187f04c837325d6b4ddaa89435a16cb959e01da30522fd1ec3366628644e04155dc0378769fe3d91e8048706c88667f51c54e48d79f919cf9100ed247bc01c
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0xc4b02c002ea5aff21276776ed46125edd782c0cf3d8f79142ff794e889a4bb84 7b22
-0xc4b02c != 0xc3b4ef
-    validating sig: 0x6a8c187f04c837325d6b4ddaa89435a16cb959e01da30522fd1ec3366628644e04155dc0378769fe3d91e8048706c88667f51c54e48d79f919cf9100ed247bc01c
-    block_number  : 0
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 2
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0xcbe366 
-    block.number: 2 
-    sig: 0xefab774426e7fbf72195b7de2ed6b4ad1ef36a63fe145f08b32bfa58d12611ca285b6ecde370b4ebdf10a23a61a90b8d623614eb0a185510d683283a46d01a911c
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0xcbe366e24d9860d7759a8dafb690a2707ed881bbe98e0ebe5b67cbbf61b0abdc 7b22
-    validating sig: 0xefab774426e7fbf72195b7de2ed6b4ad1ef36a63fe145f08b32bfa58d12611ca285b6ecde370b4ebdf10a23a61a90b8d623614eb0a185510d683283a46d01a911c
-    block_number  : 1
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 3
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0x513967 
-    block.number: 3 
-    sig: 0x2e25b4ba15352797c6d5dcafb50f89327f25b0ae8c284507a81a33422abe44ab4417d5b2e48c3a2c5e903c9357d1fd93fd39e70b48250c67470d1ab9a6c096221b
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0x513967029cbc9e7333d6f8b42ef4c04f8ea51819d2c86e978e0e0908b3cc7cde 7b22
-    validating sig: 0x36a7f32f86931f5974ce94c79c66dd3cc607b727a8eea01c2552ce61cd3e3b9d2815de8dd3ec2697eda4e3b45334685dcdff1b422362a34db395c81503f432631b
-    block_number  : 2
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 4
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0x0d1d9b 
-    block.number: 4 
-    sig: 0xa63f54813f553e95dedb0b96925e2b12d7c9f1146e9b428451b3fe09ba33a1ef322f3e094dbc532e779a292f37b3ad0972efffb4101bafed63aa1ef8f80fbe251c
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0x0d1d9bb0b9e997ad82a1ee544cfc86524a373aadec9a5d0682001d9829fd736e 7b22
-0x4b4f37 != 0x513967
-    validating sig: 0x405b605ab4a8ed216210bdbd93efe6bfc70041e86549adde400269368886c70e5e6506b6786208ffd98f435555766c49a14e253de7c7515f229a3149c9ef55ff1c
-    block_number  : 3
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 5
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0xd6e828 
-    block.number: 5 
-    sig: 0xf4d00e585bfab2d6700ab5677b84cb74a6b4b56590717657c2a36c19497c8dcc7608d82bcb9f131190d5c08be1ee5ee046e1f7d48dc82293c2110ed7d479da681b
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0xd6e828d0d29bb15073bfd03c93a7d9cfad3079640f5569a1f811a1f52c51e4b5 7b22
-e9b23b[::]:30305 tx2poa VALIDATE FAIL(NO_MATCH_TX) bExtra: 0x4fed17 txs: 
-e9b23b[::]:30305 tx2poa VALIDATE FAIL(TXDATA)
-e9b23b[::]:30305 tx2poa VALIDATE FAIL block.number: 7
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0x692b8a 
-    block.number: 6 
-    sig: 0xc55225455a87806107349715b4ff83591cc7bd5c14dbad073aea12f61d37df4a25023fedca852a99173310391ff97715e87d8b927f7310477cd5a901f204f3a91c
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0x692b8aa5034e267345d9929a5d6af1fbddc5aeb59ea88c04cb4dfa378685ed15 7b22
-    validating sig: 0xc55225455a87806107349715b4ff83591cc7bd5c14dbad073aea12f61d37df4a25023fedca852a99173310391ff97715e87d8b927f7310477cd5a901f204f3a91c
-    block_number  : 5
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 7
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0x8467e1 
-    block.number: 7 
-    sig: 0x0872b6f1b484faec3172ffa3a112a472d79f671d9aa2e9c1ed57e4b4990cc52754a8dd7fdc22dddcc09ac17838f485da8b6cca5ab44790f29f8cb42f475076501b
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0x8467e1c74e02307757e7abe4160a0db8c0e7e8667e1258b91cc21b5f5261d771 7b22
-    validating sig: 0x0872b6f1b484faec3172ffa3a112a472d79f671d9aa2e9c1ed57e4b4990cc52754a8dd7fdc22dddcc09ac17838f485da8b6cca5ab44790f29f8cb42f475076501b
-    block_number  : 6
-e9b23b[::]:30305 tx2poa VALIDATE OK block.number: 9
-e9b23b[::]:30305 tx2poa AUTHORITY POST PoTx 
-    tx: 0x954b6e 
-    block.number: 9 
-    sig: 0x46066632408f82ab86c700f2c8e9629ed243d1c9f2d63cb05969ddc77613729735ed93bde43464984a2cfdabcb0a349da211637711f4b522d0fa6e50b50ac9441c
-e9b23b[::]:30305 tx2poa AUTHORITY SET MINER EXTRA 0x954b6e680461025d43f1362ef400a2d72c3e5e350074c4aa1b79451c2c0afc16 7b22
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: SUCCESS(initialized)
+
+    eth_blockNumber: 0
+    etherbase: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 0
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xfa6d96...
+    data: [object Object]
+    signature: 0x40347175c5d1a568c1cf5e5b682a624d98c0ce36ad9025eb3d93b07a35052a1450b9c6e3daefc5bb618cf24ec753215818d41613611cb86e1078226b8133fb5d1c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x84cc85...
+    signature: 0x40347175c5d1a568c1cf5e5b682a624d98c0ce36ad9025eb3d93b07a35052a1450b9c6e3daefc5bb618cf24ec753215818d41613611cb86e1078226b8133fb5d1c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 1
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x99ab1f...
+    data: [object Object]
+    signature: 0x3402964b8b87eae3e60705a8c6f4eb4dfb12b5e47610f1d2f718da00eee499866bdf849d63d88a61f18cc64fdea4bb9fc2a4ccccf5b6f4985921a98dc686c8451b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0x97943e...
+    signature: 0x3402964b8b87eae3e60705a8c6f4eb4dfb12b5e47610f1d2f718da00eee499866bdf849d63d88a61f18cc64fdea4bb9fc2a4ccccf5b6f4985921a98dc686c8451b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 2
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x4035a7...
+    data: [object Object]
+    signature: 0x9895ea0661336a21160c7d3bf719484854b149742ddbcbec30732db7fbcecfb000fae01db8b62ef7db9ebbeb811e4903aeda8102fb926f9cf2160e66c770e6dc1b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0xf43467...
+    signature: 0x9895ea0661336a21160c7d3bf719484854b149742ddbcbec30732db7fbcecfb000fae01db8b62ef7db9ebbeb811e4903aeda8102fb926f9cf2160e66c770e6dc1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 3
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x649906...
+    data: [object Object]
+    signature: 0xb077898d3c0e5addd194910482d1695581f5657ef58fba5182f623c339a6cdcc18f29b30d9b937b86c7b659dfbaa450e8c2bb026fe4f12670e110b3a97454bc31c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x2ce7a5458070fd63f174c28379415c865faf1c4b8c6701e673ebbe68ea3e31ad
+    block_transactions: 0x649906b587b2c257bead17c5c6e6677a7e5c1e6be8bdc2c01afc857e0dfbac7e
+    block_miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 4
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x1efe3f...
+    data: [object Object]
+    signature: 0xc224a3aae84e5afe9f4841187fb184fe1a517fed477d544f8e50dc7bf9ad5f3e6678cc62d35c1c1fcd4e37ef85558d1cb6fc7c8a7410d4a68c4b111ba8b72ae81c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6088cec4d6cac6484fc271398db58f5ea7b74aa2efc92b320205c28e2f25a4be
+    block_transactions: 
+    block_miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xb8ceb1...
+    data: [object Object]
+    signature: 0x2ad39c89f89761b3e2221235eece1f0a86307c1e38ebfa04e6c5f7553ece0fdc083527312cd2a17c46c005c776c4acfc33cf09ae6ac32ff7fd1314295c3235ea1c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x15e7777f0da706209fdaa9619f4bc47e2c3ec16efd3f9c387656453cd15533ff
+    block_transactions: 0xa49d0dad6feacbc7013949201817330492180e35f4cdf5b83511125ff596fd3f
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xf94710...
+    data: [object Object]
+    signature: 0x0c27d1ac1549b71885f007d8fff51fd3b75d0bc09b939869290e9fef164cc28704bb8a22c22e886fe759378f894f01f706dbed82a1648112cc6f6d0959b24d031c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x7ef05f9952764a74bcdface6e7b9eae135573b11bce77d5dd62a56efd9897cd3
+    block_transactions: 
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xbf95ef...
+    data: [object Object]
+    signature: 0xf7ba5931a44418d58d7e53c7749232fdab9ab331e010b88f22b4ef30ac01755459c627f635bdb3f5a455c89526a77d641d314e41b7aff025ba40142041a003631b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0xfd60411f3370f1752062bcdebdf4a58b23ce5438b39751a4ee86e321f7cb0c5a
+    block_transactions: 
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xe0d44e...
+    data: [object Object]
+    signature: 0x5f13a7773106f71ae8e519e544df75b948cb3ab8b3fa848b8c26398b89ae9cc32c88cc6497419d8ac4a82dcaa81436146187ad4d83c884ce45af70ffbf78cfb91c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0xe883e5dab87e960338ff5cd7c2e847b815970b167e7bd7dc2d5031f2eadd742a
+    block_transactions: 
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x9b9fb8...
+    data: [object Object]
+    signature: 0xe7e7594f017139fc4331b9c238944a1d67668db29d7f370fec808fd6a15be64b6af684e6d29186c931db244b0bdc2bb1b205bea38e34ea76ddecd6ebfadc8b331b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x0ec3dfe2686440d6f6f3b17d597db912d97104cf8512ad56967d5a5c20fe5314
+    block_transactions: 
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x54d1c1...
+    data: [object Object]
+    signature: 0x07e281d724bdaef4929dac54ee70fa7f4e4e42496cf8d6a574a4670195ec68145aa435bdf90c31a6f70876d688062b8ac6ea76f2e47648b0441c55f844fa02bb1c
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x75ec9bbe697ace52e9ca25787962ee563914cb2298b82c8c97a82d4aec8f1e47
+    block_transactions: 
+    block_miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x8183a2...
+    data: [object Object]
+    signature: 0xb6a3abbf93669caec1cd0cd56f1c2bed36cc9447c84a488a6ae07327d198cd140d16811ff34f3c8fdc85caba27614a617e444801ad3c24d293b6eb136ee36cef1b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 7
+    block_number: 7
+    block_hash: 0x3c8e48b3cd301bab7ef1595b00ce36f4ee410975385a296aff5320f93186ed37
+    block_transactions: 
+    block_miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 6
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xcebfd0...
+    data: [object Object]
+    signature: 0x2dcb7db876963699b7a409dce7e5e6bfee4eae07bcc43a50232d38ba20c237686efb58e5314fbb92560085825a7e9c465fef76cb238914366bdb4c13637de8551b
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no matching tx from header)
+
+    eth_blockNumber: 7
+    block_number: 7
+    block_hash: 0x492c93bd11945dfa250e2e5a49a95215059deb7395c48f67769d457352923e21
+    block_transactions: 
+    block_miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 6
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xfdc44b...
+    data: [object Object]
+    signature: 0x7716be9fe29b5c7a2b31b5959c21a7e8d31e68ea0d84f597f0f4b02bc6ebc8e963f55bac4cbe6b173c6d03c5d8f475ab93af52f88c4f5d0bf11ff509de6fff581c
