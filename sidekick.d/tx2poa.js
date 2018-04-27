@@ -1,5 +1,6 @@
-
-
+var minerThreads = 1;
+var minerDebounceSleep = 5; // shoot me now.
+var lastValidBlockNumber = 0;
 var cacheAuthorityOrMinion = "";
 function mustAmMinionOrAuthority() {
 	if (cacheAuthorityOrMinion !== "") {return cacheAuthorityOrMinion; }
@@ -8,7 +9,7 @@ function mustAmMinionOrAuthority() {
 }
 
 function logWithPrefix(s) {
-	console.log(mustAmMinionOrAuthority() + "@[" + admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr +"]\n", s);
+	console.log("\n" + mustAmMinionOrAuthority() + "@[" + admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr +"]\n", s);
 }
 
 function logStatus(action, state, reason, detailsObj) {
@@ -84,6 +85,14 @@ function validateAuthorityByTransaction(block) {
 		return true
 	}
 
+	if (block.transactions.length < 1) {
+		logStatus("VALIDATE", "FAIL", "no transactions", {
+			"block_number": block.number,
+			"block_hash": block.hash.substring(0,8)+"..."
+		});
+		return false;
+	}
+
 	// fail if the block miner (etherBase) is not an established authority
 	var authorityIndex = authorities.indexOf(block.miner);
 	if (authorityIndex < 0) {
@@ -142,20 +151,49 @@ function validateAuthorityByTransaction(block) {
 // ensureOrIgnoreBlockAuthority validates the current block's authority.
 // if validation fails, the block is purged and the function returns false.
 // if validation succeeds, the function returns true.
-function ensureOrIgnoreCurrentBlockAuthority() {
+function handleValidateAuthority(onInvalid, onValid) {
 	var bn = eth.blockNumber;
 	var b = eth.getBlock(bn);
 	if (!validateAuthorityByTransaction(b)) {
-		debug.setHead(bn-1);
-		return false;
+		if (onInvalid !== null) {
+				onInvalid(bn);
+		}
+	} else if (onValid !== null) {
+		onValid(bn);
 	}
-	return true;
 }
 
-function postAuthorityDemonstration() {
+// FIXME Isaac thinks I need a lock or a debouncer
+function postAuthorityDemonstration(resendableTxObj) {
 
 	// pause miner
 	miner.stop();
+
+	function beginMining() {
+		admin.sleep(minerDebounceSleep);
+		var i = authorities.indexOf(eth.accounts[0]);
+		// sneaky kind of round robin
+		// this may not be necessary
+		if (eth.blockNumber % (i+1) === i) {
+				miner.start(minerThreads);
+		}
+	}
+
+	if (resendableTxObj !== null && typeof resendableTxObj !== "undefined" && resendableTxObj.hasOwnProperty("from")) {
+		logStatus("AUTHORITY", "RESEND", null, {
+			"tx": resendableTxObj,
+			"eth_blockNumber": eth.blockNumber,
+			"authority": authorityAccount,
+			"tx_hash": resendableTxObj.hash.substring(0,8)+"...",
+			"data": rawData,
+			"signature": sig
+		});
+		resendableTxObj.nonce++;
+		// eth.resend(resendableTxObj); // fails because tx can not be found
+		eth.sendTransaction(resendableTxObj);
+		beginMining();
+		return resendableTxObj;
+	}
 
 	// initialize status pessimistically
 	var status = "fail";
@@ -200,23 +238,25 @@ function postAuthorityDemonstration() {
 	};
 
 	// broadcast the poa transactions
-	var tx = eth.sendTransaction(txObj);
+	var txh = eth.sendTransaction(txObj);
+	txObj = eth.pendingTransactions[0];
 	logStatus("AUTHORITY", "POST", null, {
 		"eth_blockNumber": eth.blockNumber,
 		"authority": authorityAccount,
-		"tx_hash": tx.substring(0,8)+"...",
+		"tx_hash": txh.substring(0,8)+"...",
+		"tx": txObj,
 		"data": rawData,
 		"signature": sig
 	});
 
 	// set tx hash as miner.ExtraData in case our miner wins
 	// the tx substring part aids precision of validation by enabling QueryN=1 eth.getTransaction query instead of QueryN <= block.transactions.length
-	if (!miner.setExtra(tx.substring(0,8)+sig_part1)) {
+	if (!miner.setExtra(txh.substring(0,8)+sig_part1)) {
 
 		logStatus("AUTHORITY", "ERROR", "failed to set miner extra data", {
 			"eth_blockNumber": eth.blockNumber,
 			"authority": authorityAccount,
-			"tx_hash": tx.substring(0,8)+"...",
+			"tx_hash": txh.substring(0,8)+"...",
 			"currentBlockNumber": eth.blockNumber
 		});
 
@@ -226,14 +266,10 @@ function postAuthorityDemonstration() {
 	}
 
 	if (status === "success") {
-		miner.start(1);
+		beginMining();
 	}
 
-	return {
-		"txhash": tx,
-		"tx": txObj,
-		"status": status
-	};
+	return txObj;
 }
 
 // ensure there is an account and that it is unlocked
@@ -279,46 +315,36 @@ function ensureAuthorityAccount() {
 // the partial hash of that transaction's poa is included in block's 'extraData' field.
 // The function also validates the authority of all incoming blocks.
 // FIXME: it might block the normal shutdown mechanism for a geth client
-function runAuthority() {
-	// TODO handle if was an error posting poa tx
-	// if (tx === "err") {
-	// 		admin.sleepBlocks(1);
-	// 	runMinion();
-	// }
-	if (ensureOrIgnoreCurrentBlockAuthority()) {
-		postAuthorityDemonstration();
-	} else {
-		// FIXME maybe
-		postAuthorityDemonstration();
+function runAuthority(txo) {
 
-		// // most recent block was invalid and was purged
-		// // check if latest poa tx is still pending or was included in the block that was purged
-		// var pending = eth.pendingTransactions();
-		// var reuseTx = false;
-		// if (pending.length > 0) {
-		// 	for (var i = 0; i < pending.length-1; i++) {
-		// 		if (pending[i].hash === tx) {
-		// 			reuseTx = true;
-		// 			break;
-		// 		}
-		// 	}
-		// }
-		// // if poa tx was not included and thus removed with the purged invalid block, resend it
-		// if (reuseTx) {
-		// 	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "RESENDING", txObj);
-		// 	eth.resend(txObj);
-		// } else {
-		// 	// otherwise just post a new poa tx
-		// 	postAuthorityDemonstration();
-		// }
+	// TODO handle if was an error posting poa tx
+	handleValidateAuthority(
+		function onFail(bn) {
+				debug.setHead(bn-1);
+				txo = postAuthorityDemonstration();
+		},
+		function onOk(bn) {
+			defaultValidCallback(bn);
+			txo = postAuthorityDemonstration();
+			admin.sleepBlocks(1);
+		}
+	)
+
+	runAuthority(txo);
+}
+
+var defaultInvalidCallback = function(invalidBlockNumber) {
+	debug.setHead(lastValidBlockNumber);
+}
+var defaultValidCallback = function(validBlockNumber) {
+	if (lastValidBlockNumber < validBlockNumber) {
+			lastValidBlockNumber = validBlockNumber;
 	}
-	admin.sleepBlocks(1);
-	runAuthority();
 }
 
 // runMinion validates the authority of all incoming blocks.
 function runMinion() {
-	ensureOrIgnoreCurrentBlockAuthority();
+	handleValidateAuthority(defaultInvalidCallback, defaultValidCallback);
 	admin.sleepBlocks(1);
 	runMinion();
 }
