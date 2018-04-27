@@ -5,7 +5,7 @@ loadScript("authorities.js");
 
 // TODO: I think this might be slow. Is there a faster way?
 function findPoaTxData(block) {
-	for (var i = 0; i < block.transactions.length-1; i++) {
+	for (var i = 0; i < block.transactions.length; i++) {
 		var txH = block.transactions[i];
 		// skip if tx hash doesn't match tx hash prefix from blockHeader.extraData field.
 		if (block.extraData.substring(0,8) !== txH.substring(0,8)) {
@@ -36,7 +36,7 @@ function validateAuthorityByTransaction(block) {
 	//
 	// genesis block is automatically OK
 	if (block.number === 0) {
-		return true;
+		return true
 	}
 	// fail if the block miner (etherBase) is not an established authority
 	var authorityIndex = authorities.indexOf(block.miner);
@@ -44,16 +44,15 @@ function validateAuthorityByTransaction(block) {
 		return false;
 	}
 	// fail if block does not contain a sufficient poa tx
-	var txdata = findPoaTxData(block);
-	if (txdata === false) {
+	var txdataJSON = findPoaTxData(block);
+	if (txdataJSON === false) {
 		return false;
 	}
 	// here's the real poa; the rest could easily be forged
-	var ok = personal.ecRecover(eth.getBlock(block.number-1).hash, block.extraData.substring(8)+txdata.sig) == block.miner;
+	var ok = personal.ecRecover(eth.getBlock(block.number-1).hash, block.extraData.substring(8)+txdataJSON.sig) == block.miner;
 	if (!ok) {
 		// admin.dropPeer(data.enode); // this could be forged easily... hm. There might be a way to be sure of the enode with another signature if it's worth it.
 		// authorities.splice(authorityIndex, 1);
-		console.log("invalid signature made apparently by". block.miner);
 		return ok; // false
 	}
 	return ok;
@@ -93,7 +92,7 @@ function postAuthorityDemonstration() {
 	// However, by splitting the signature between tx and header, the signature beocmes
 	// unknowable and thus unforgeable until the block is mined and broadcasted.
 	// eg. "0x3f2c6d378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
-	var sigHeaderChunk = sig.substring(0,8); // firstchunk: "0x3f2c6d", smaller because field size limit
+	var sigHeaderChunk = sig.substring(2,8); // firstchunk: "0x3f2c6d", smaller because field size limit
 	var sigTxChunk = sig.substring(8) // secondchunk: "378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
 	// => sigHeaderChunk+sigTxChunk = signature hash
 
@@ -125,19 +124,18 @@ function postAuthorityDemonstration() {
 function ensureAuthorityAccount() {
 	var authorityAccount;
 	if (eth.accounts.length === 0) {
-		  // FIXME: I0426 14:02:10.914469 consolecmd.go:200] Failed to execute /Users/ia/dev/sidekick/poc/sidekick.d/authority.js: ReferenceError: 'exit' is not defined
-	    // exit; // sanity check
-			console.log("tx2poa", "AUTHORITY", "ERR NO ACCOUNTS", "Running as minion instead...");
+		// FIXME: method undefined error
+			// exit; // sanity check
+			console.log("tx2poa", "AUTHORITY", "ERROR", "no accounts", "running minion...")
 			runMinion();
 	} else {
 		// Could improve so authority accounts could arbitrary account A from n accounts
 		authorityAccount = eth.accounts[0];
 	}
-	// TODO: dont have your password be yes, and dont pass it here
-	// if (!personal.unlockAccount(authorityAccount, "yes", 0)) {
-	// 		console.log("tx2poa", "AUTHORITY", "ERR ACCT LOCKED", "Running as minion instead...");
+	// FIXME: simpler to use --password and --unlock flags. #mvp
+	// if (!personal.unlockAccount(authorityAccount)) {
+	// 		console.log("tx2poa", "AUTHORITY", "ERROR", "unlock account", "running minion...")
 	// 		runMinion();
-	// 	// FIXME: see above about exit not being defined
 	// 	// exit;
 	// }
 	miner.setEtherbase(authorityAccount);
