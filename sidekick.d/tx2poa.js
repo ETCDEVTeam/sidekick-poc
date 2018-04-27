@@ -1,10 +1,4 @@
-// load authorities (array)
-// sets
-//   var authorities = [...];
-loadScript("authorities.js");
-
-// TODO: I think this might be slow. Is there a faster way?
-function findPoaTxData(block) {
+	function findPoaTxData(block) {
 	for (var i = 0; i < block.transactions.length; i++) {
 		var txH = block.transactions[i];
 		// skip if tx hash doesn't match tx hash prefix from blockHeader.extraData field.
@@ -12,7 +6,7 @@ function findPoaTxData(block) {
 			continue;
 		}
 
-		var tx = eth.getTransactionByHash(txH); // assume unlikely tx hash prefix collisions
+		var tx = eth.getTransaction(txH); // assume unlikely tx hash prefix collisions
 		if (typeof tx === "undefined") { return false; }
 
 		if (tx["from"] !== block["miner"]) {
