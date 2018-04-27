@@ -1,29 +1,37 @@
-	function findPoaTxData(block) {
+function findPoaTxData(block) {
 	for (var i = 0; i < block.transactions.length; i++) {
 		var txH = block.transactions[i];
 		// skip if tx hash doesn't match tx hash prefix from blockHeader.extraData field.
-		if (block.extraData.substring(0,8) !== txH.substring(0,8)) {
+
+		// FIXME
+		// 5ddc1f[::]:30311 tx2poa VALIDATE FAIL(NO_MATCH_TX) bExtra: 0x153406 txs: 0x153406332a082c1db29c2b7c1e2afcd950afde222394a42dc011524324f1a122
+
+		var bed = block.extraData.substring(0,8);
+		var txsub = txH.substring(0,8);
+		if (bed !== txsub) {
+			console.log(bed, "!=", txsub);
 			continue;
 		}
 
 		var tx = eth.getTransaction(txH); // assume unlikely tx hash prefix collisions
-		if (typeof tx === "undefined") { return false; }
 
 		if (tx["from"] !== block["miner"]) {
+			console.log("tx.from != block.miner", tx.from, block.miner);
 			return false;
 		}
 
 		var data;
 		try {
-			data = JSON.parse(web3.toAscii(tx.data));
+			data = JSON.parse(web3.toAscii(tx.input));
 		} catch(err) {
-			console.log("invalid PoA Tx data for Tx:", tx);
+			console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "invalid PoA Tx data for Tx:", JSON.stringify(tx));
 			return false;
 		}
-		if ((typeof data.sig === "String") && (typeof data.enode === "String")) {
+		// if ((typeof data.sig === "String") && (typeof data.enode === "String")) {
 			return data;
-		}
+		// }
 	}
+	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "FAIL(NO_MATCH_TX)", "bExtra:", block.extraData.substring(0,8), "txs:", block.transactions.join(", "));
 	return false;
 }
 
@@ -34,21 +42,29 @@ function validateAuthorityByTransaction(block) {
 	//
 	// genesis block is automatically OK
 	if (block.number === 0) {
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "OK(GENESIS)", block.number);
 		return true
 	}
 	// fail if the block miner (etherBase) is not an established authority
 	var authorityIndex = authorities.indexOf(block.miner);
 	if (authorityIndex < 0) {
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "FAIL(BLOCK_MINER)", block.miner, "!<", authorities.join(", "));
 		return false;
 	}
 	// fail if block does not contain a sufficient poa tx
 	var txdataJSON = findPoaTxData(block);
 	if (txdataJSON === false) {
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "FAIL(TXDATA)");
 		return false;
 	}
 	// here's the real poa; the rest could easily be forged
-	var ok = personal.ecRecover(eth.getBlock(block.number-1).hash, "0x"+block.extraData.substring(8)+txdataJSON.sig) == block.miner;
+	var sig = "0x"+block.extraData.substring(8)+txdataJSON.sig;
+	console.log("    validating sig:",sig);
+	console.log("    block_number  :",txdataJSON.block_number);
+	var rec = personal.ecRecover(eth.getBlock(txdataJSON.block_number).hash, sig);
+	var ok = rec === block.miner;
 	if (!ok) {
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "FAIL(SIG)", "\n    recovered:", rec, "\n    miner:", block.miner, "\n    sig:", sig);
 		// admin.dropPeer(data.enode); // this could be forged easily... hm. There might be a way to be sure of the enode with another signature if it's worth it.
 		// authorities.splice(authorityIndex, 1);
 		return ok; // false
@@ -62,50 +78,18 @@ function validateAuthorityByTransaction(block) {
 function ensureOrIgnoreCurrentBlockAuthority() {
 	var b = eth.getBlock(eth.blockNumber);
 	if (!validateAuthorityByTransaction(b)) {
-		console.log("tx2poa", "VALIDATE", "FAIL", b);
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "FAIL", "block.number:", b.number);
 		debug.setHead(eth.blockNumber-1);
 		return false;
 	}
-	console.log("tx2poa", "VALIDATE", "OK", b.number);
+	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "VALIDATE", "OK", "block.number:", b.number);
 	return true;
 }
 
-function buildAuthTxObj() {
-	var lastBlockN = 0; // init case as genesis
-	if (eth.blockNumber > 0) {
-		lastBlockN = eth.blockNumber - 1;
-	}
-	var lastBlock = eth.getBlock(lastBlockN); // previous block
-	var authorityAccount = eth.accounts[0];
-
-	var sig = eth.sign(authorityAccount, lastBlock.hash);
-
-	// This is the important part.
-	// Without splitting the signature hash (and, say, including the whole hash in the tx input field),
-	// authority could easily be forged by an attacker node that would just watch transactions and set header
-	// data from random authorities' transaction data. I guess it could successfully forge 1/authorities.length blocks.
-	// However, by splitting the signature between tx and header, the signature beocmes
-	// unknowable and thus unforgeable until the block is mined and broadcasted.
-	// eg. "0x3f2c6d378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
-	var sig_part1 = sig.substring(2,8); // firstchunk: "3f2c6d", smaller because field size limit
-	var sig_part2 = sig.substring(8) // secondchunk: "378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
-	// => sig_part1+sig_part2 = signature hash
-
-	// post transaction as an authority
-	var d = JSON.stringify({
-		"sig": sig_part2,
-		"enode": admin.nodeInfo.enode
-	});
-	return {
-		"from": authorityAccount,
-		"to": authorityAccount,
-		"value": web3.toWei(1, 'wei'),
-   	// use JSON just because we can and it seems extensible
-		"data": web3.fromAscii(d).substring(2) // strip 0x
-	};
-}
-
 function postAuthorityDemonstration() {
+
+	miner.stop();
+
 	var status = "fail";
 	var lastBlockN = 0; // init case as genesis
 	if (eth.blockNumber > 0) {
@@ -130,6 +114,7 @@ function postAuthorityDemonstration() {
 	// post transaction as an authority
 	var d = JSON.stringify({
 		"sig": sig_part2,
+		"block_number": lastBlock.number,
 		"enode": admin.nodeInfo.enode
 	});
 	// var txObj = buildAuthTxObj();
@@ -141,15 +126,21 @@ function postAuthorityDemonstration() {
 		"data": web3.fromAscii(d).substring(2) // strip 0x
 	};
 	var tx = eth.sendTransaction(txObj);
+	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "POST PoTx", "\n    tx:", tx.substring(0,8), "\n    block.number:", eth.blockNumber, "\n    sig:", sig);
+
 	// include this tx hash within 'extraData' in block if our authoritative miner wins.
 	// prefix sig_part1 with tx hash substring for single-query validation.
 	if (!miner.setExtra(tx.substring(0,8)+sig_part1)) {
-		console.log("tx2poa", "AUTHORITY", "ERROR", "failed to set miner extra", tx, "becoming a Minion instead...");
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "ERROR", "failed to set miner extra", tx, "becoming a Minion instead...");
 		tx = "err";
 		miner.stop(); // TODO: handle me better maybe
 	} else {
-		console.log("tx2poa", "AUTHORITY", "OK", tx, txObj);
+		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "SET MINER EXTRA", tx, txObj.data.substring(0,4));
 		status = "success";
+	}
+
+	if (status === "success") {
+		miner.start(1);
 	}
 
 	return {
@@ -161,13 +152,13 @@ function postAuthorityDemonstration() {
 
 // ensure there is an account and that it is unlocked
 function ensureAuthorityAccount() {
-	console.log("ensureing auth");
+	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "ensureing auth");
 	var authorityAccount;
 
 	if (eth.accounts.length === 0) {
 		// FIXME: method undefined error
 			// exit; // sanity check
-			console.log("tx2poa", "AUTHORITY", "ERROR", "no accounts", "running minion...")
+			console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "ERROR", "no accounts", "running minion...")
 			runMinion();
 	} else {
 		// Could improve so authority accounts could arbitrary account A from n accounts
@@ -175,12 +166,12 @@ function ensureAuthorityAccount() {
 	}
 	// FIXME: simpler to use --password and --unlock flags. #mvp
 	// if (!personal.unlockAccount(authorityAccount)) {
-	// 		console.log("tx2poa", "AUTHORITY", "ERROR", "unlock account", "running minion...")
+	// 		console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "ERROR", "unlock account", "running minion...")
 	// 		runMinion();
 	// 	// exit;
 	// }
   var ok = miner.setEtherbase(authorityAccount);
-	console.log("tx2poa", "AUTHORITY", "INIT", authorityAccount, ok);
+	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "INIT", authorityAccount, ok);
 	return ok;
 }
 
@@ -215,7 +206,7 @@ function runAuthority() {
 		// }
 		// // if poa tx was not included and thus removed with the purged invalid block, resend it
 		// if (reuseTx) {
-		// 	console.log("tx2poa", "AUTHORITY", "RESENDING", txObj);
+		// 	console.log(admin.nodeInfo.id.substring(0,6)+admin.nodeInfo.listenAddr, "tx2poa", "AUTHORITY", "RESENDING", txObj);
 		// 	eth.resend(txObj);
 		// } else {
 		// 	// otherwise just post a new poa tx

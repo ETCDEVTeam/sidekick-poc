@@ -1,0 +1,24 @@
+6838df[::]:30309 tx2poa VALIDATE OK(GENESIS) 0
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 0
+    validating sig: 0xf542661149861bde05ac316ca0f38a4afda38a8f2eaf1e7734084ec271cb57ec58f7eefdedd7946bce319307822864e781fe80edc59f1fa2ca34689d32fdf7f01c
+    block_number  : 0
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 1
+    validating sig: 0xefab774426e7fbf72195b7de2ed6b4ad1ef36a63fe145f08b32bfa58d12611ca285b6ecde370b4ebdf10a23a61a90b8d623614eb0a185510d683283a46d01a911c
+    block_number  : 1
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 3
+    validating sig: 0x36a7f32f86931f5974ce94c79c66dd3cc607b727a8eea01c2552ce61cd3e3b9d2815de8dd3ec2697eda4e3b45334685dcdff1b422362a34db395c81503f432631b
+    block_number  : 2
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 4
+0x4b4f37 != 0x513967
+    validating sig: 0x405b605ab4a8ed216210bdbd93efe6bfc70041e86549adde400269368886c70e5e6506b6786208ffd98f435555766c49a14e253de7c7515f229a3149c9ef55ff1c
+    block_number  : 3
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 5
+6838df[::]:30309 tx2poa VALIDATE FAIL(NO_MATCH_TX) bExtra: 0x4fed17 txs: 
+6838df[::]:30309 tx2poa VALIDATE FAIL(TXDATA)
+6838df[::]:30309 tx2poa VALIDATE FAIL block.number: 7
+    validating sig: 0xdfea4b51f481f7e3840b5e3f069327a825e3e829b2f5ba4f8ede9a88c453f25944e9f6569868c8e2b6eb1c1212e928eb3eb910e382e721c09cbd30a0e518e5681c
+    block_number  : 6
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 8
+    validating sig: 0x0872b6f1b484faec3172ffa3a112a472d79f671d9aa2e9c1ed57e4b4990cc52754a8dd7fdc22dddcc09ac17838f485da8b6cca5ab44790f29f8cb42f475076501b
+    block_number  : 6
+6838df[::]:30309 tx2poa VALIDATE OK block.number: 9

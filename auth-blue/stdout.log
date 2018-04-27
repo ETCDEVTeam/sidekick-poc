@@ -1,0 +1,66 @@
+2ff7e3[::]:30303 ensureing auth
+2ff7e3[::]:30303 tx2poa AUTHORITY INIT 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94 true
+2ff7e3[::]:30303 tx2poa VALIDATE OK(GENESIS) 0
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 0
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x1e0ad5 
+    block.number: 0 
+    sig: 0xf542661149861bde05ac316ca0f38a4afda38a8f2eaf1e7734084ec271cb57ec58f7eefdedd7946bce319307822864e781fe80edc59f1fa2ca34689d32fdf7f01c
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x1e0ad5cd122ecd26f974f9353faa29b5da7cfab2d9501c3be9f6fb0e1b67f4bd 7b22
+    validating sig: 0xf542661149861bde05ac316ca0f38a4afda38a8f2eaf1e7734084ec271cb57ec58f7eefdedd7946bce319307822864e781fe80edc59f1fa2ca34689d32fdf7f01c
+    block_number  : 0
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 1
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x5fb12b 
+    block.number: 1 
+    sig: 0x91dced532908a0694608e42e9d2f8cf25c54d8efc62e30e1e2fc9818a222aede4cc7cda7fa4bef38b6d7d72650b6749142f361e0c973e31fd2a94b8625e06c941b
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x5fb12b3922af4f4a6d9c6f3341b1ad92b277ac2f8d80ac95ed935ec4d99538c7 7b22
+    validating sig: 0xefab774426e7fbf72195b7de2ed6b4ad1ef36a63fe145f08b32bfa58d12611ca285b6ecde370b4ebdf10a23a61a90b8d623614eb0a185510d683283a46d01a911c
+    block_number  : 1
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 3
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x1f5441 
+    block.number: 3 
+    sig: 0x36a7f32f86931f5974ce94c79c66dd3cc607b727a8eea01c2552ce61cd3e3b9d2815de8dd3ec2697eda4e3b45334685dcdff1b422362a34db395c81503f432631b
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x1f5441f264210e8b6ca7ef0a7b7b37f45dd91d2a8951a030731ca749627780e8 7b22
+    validating sig: 0x36a7f32f86931f5974ce94c79c66dd3cc607b727a8eea01c2552ce61cd3e3b9d2815de8dd3ec2697eda4e3b45334685dcdff1b422362a34db395c81503f432631b
+    block_number  : 2
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 4
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x4b4f37 
+    block.number: 4 
+    sig: 0x405b605ab4a8ed216210bdbd93efe6bfc70041e86549adde400269368886c70e5e6506b6786208ffd98f435555766c49a14e253de7c7515f229a3149c9ef55ff1c
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x4b4f37f62715a11704243e6f70f87ee9e16f6b28a7fea2b4f5b0fb48e924ce53 7b22
+0x4b4f37 != 0x513967
+    validating sig: 0x405b605ab4a8ed216210bdbd93efe6bfc70041e86549adde400269368886c70e5e6506b6786208ffd98f435555766c49a14e253de7c7515f229a3149c9ef55ff1c
+    block_number  : 3
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 5
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x4fed17 
+    block.number: 5 
+    sig: 0x464e7647de0cc672f51d92ce6a0aafdac07e4aeb22cdb8477b72e23702ae904a56d64fef608d7d55fab4b1e7ccccd4f69e1bc304e67c3b2fd655cc258ebba25d1b
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x4fed171b28b9e7c27a4973f3e284421dc554c93152e0643ee67bed3cf1659fdf 7b22
+2ff7e3[::]:30303 tx2poa VALIDATE FAIL(NO_MATCH_TX) bExtra: 0x4fed17 txs: 
+2ff7e3[::]:30303 tx2poa VALIDATE FAIL(TXDATA)
+2ff7e3[::]:30303 tx2poa VALIDATE FAIL block.number: 7
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0xacd6e6 
+    block.number: 6 
+    sig: 0x85c4034a1d2d9f342e824172b06e6130e59cf3aaed9328c40b06f7b3517a92446f8fb08e8e9d2aa64eeb5f83c1bc17c934d6a40b39830f1822a836442700d2671c
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0xacd6e67cf3dabc34cb9e2a57e72a8c86111680029159609057be29f65c4dbf82 7b22
+    validating sig: 0xc55225455a87806107349715b4ff83591cc7bd5c14dbad073aea12f61d37df4a25023fedca852a99173310391ff97715e87d8b927f7310477cd5a901f204f3a91c
+    block_number  : 5
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 7
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0xc92909 
+    block.number: 7 
+    sig: 0xdfea4b51f481f7e3840b5e3f069327a825e3e829b2f5ba4f8ede9a88c453f25944e9f6569868c8e2b6eb1c1212e928eb3eb910e382e721c09cbd30a0e518e5681c
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0xc9290973d2b9722d0ce8462c63188929eb72db80f824ace0fb5578e2d6443227 7b22
+    validating sig: 0x0872b6f1b484faec3172ffa3a112a472d79f671d9aa2e9c1ed57e4b4990cc52754a8dd7fdc22dddcc09ac17838f485da8b6cca5ab44790f29f8cb42f475076501b
+    block_number  : 6
+2ff7e3[::]:30303 tx2poa VALIDATE OK block.number: 9
+2ff7e3[::]:30303 tx2poa AUTHORITY POST PoTx 
+    tx: 0x2959ad 
+    block.number: 9 
+    sig: 0xe9f2612ff477edf9ba943f8cdecfe115af097db0dfdbaedfcfd172d0297ec3094e391b8f9b4f04c81f7f024e96703068a6ea0846bd0d09bb3bd9339b45224d421b
+2ff7e3[::]:30303 tx2poa AUTHORITY SET MINER EXTRA 0x2959ad6c974ce1aef95ef8121cd0d748b76a2bc41941a93cfbd50d171ea4521e 7b22
