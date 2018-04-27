@@ -11,10 +11,14 @@ function findPoaTxData(block) {
 		if (block.extraData.substring(0,8) !== txH.substring(0,8)) {
 			continue;
 		}
+
 		var tx = eth.getTransactionByHash(txH); // assume unlikely tx hash prefix collisions
-		if (tx.from !== block.miner) {
+		if (typeof tx === "undefined") { return false; }
+
+		if (tx["from"] !== block["miner"]) {
 			return false;
 		}
+
 		var data;
 		try {
 			data = JSON.parse(web3.toAscii(tx.data));
@@ -49,7 +53,7 @@ function validateAuthorityByTransaction(block) {
 		return false;
 	}
 	// here's the real poa; the rest could easily be forged
-	var ok = personal.ecRecover(eth.getBlock(block.number-1).hash, block.extraData.substring(8)+txdataJSON.sig) == block.miner;
+	var ok = personal.ecRecover(eth.getBlock(block.number-1).hash, "0x"+block.extraData.substring(8)+txdataJSON.sig) == block.miner;
 	if (!ok) {
 		// admin.dropPeer(data.enode); // this could be forged easily... hm. There might be a way to be sure of the enode with another signature if it's worth it.
 		// authorities.splice(authorityIndex, 1);
@@ -72,10 +76,7 @@ function ensureOrIgnoreCurrentBlockAuthority() {
 	return true;
 }
 
-var txObj = {}; // tx obj of last poa tx
-var tx = ""; // hash of last poa tx
-
-function postAuthorityDemonstration() {
+function buildAuthTxObj() {
 	var lastBlockN = 0; // init case as genesis
 	if (eth.blockNumber > 0) {
 		lastBlockN = eth.blockNumber - 1;
@@ -92,37 +93,83 @@ function postAuthorityDemonstration() {
 	// However, by splitting the signature between tx and header, the signature beocmes
 	// unknowable and thus unforgeable until the block is mined and broadcasted.
 	// eg. "0x3f2c6d378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
-	var sigHeaderChunk = sig.substring(2,8); // firstchunk: "0x3f2c6d", smaller because field size limit
-	var sigTxChunk = sig.substring(8) // secondchunk: "378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
-	// => sigHeaderChunk+sigTxChunk = signature hash
+	var sig_part1 = sig.substring(2,8); // firstchunk: "3f2c6d", smaller because field size limit
+	var sig_part2 = sig.substring(8) // secondchunk: "378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
+	// => sig_part1+sig_part2 = signature hash
 
 	// post transaction as an authority
 	var d = JSON.stringify({
-		"sig": sigTxChunk,
+		"sig": sig_part2,
 		"enode": admin.nodeInfo.enode
 	});
-	txObj = {
-		from: authorityAccount,
-		to: authorityAccount,
-		value: web3.toWei(1, 'wei'),
-		// use JSON just because we can and it seems extensible
-			data: web3.fromAscii(d).substring(2) // strip 0x
+	return {
+		"from": authorityAccount,
+		"to": authorityAccount,
+		"value": web3.toWei(1, 'wei'),
+   	// use JSON just because we can and it seems extensible
+		"data": web3.fromAscii(d).substring(2) // strip 0x
 	};
-	tx = eth.sendTransaction();
+}
+
+function postAuthorityDemonstration() {
+	var status = "fail";
+	var lastBlockN = 0; // init case as genesis
+	if (eth.blockNumber > 0) {
+		lastBlockN = eth.blockNumber - 1;
+	}
+	var lastBlock = eth.getBlock(lastBlockN); // previous block
+	var authorityAccount = eth.accounts[0];
+
+	var sig = eth.sign(authorityAccount, lastBlock.hash);
+
+	// This is the important part.
+	// Without splitting the signature hash (and, say, including the whole hash in the tx input field),
+	// authority could easily be forged by an attacker node that would just watch transactions and set header
+	// data from random authorities' transaction data. I guess it could successfully forge 1/authorities.length blocks.
+	// However, by splitting the signature between tx and header, the signature beocmes
+	// unknowable and thus unforgeable until the block is mined and broadcasted.
+	// eg. "0x3f2c6d378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
+	var sig_part1 = sig.substring(2,8); // firstchunk: "3f2c6d", smaller because field size limit
+	var sig_part2 = sig.substring(8) // secondchunk: "378852d4e98c823d1d09e89e0ec5fffbe0d615b408b3a5dfcbaaf5a2e71800a98426e181a4e4945a9d910fe7a2471498c16f266bbd6bb3110318dd75601b"
+	// => sig_part1+sig_part2 = signature hash
+
+	// post transaction as an authority
+	var d = JSON.stringify({
+		"sig": sig_part2,
+		"enode": admin.nodeInfo.enode
+	});
+	// var txObj = buildAuthTxObj();
+	var txObj = {
+		"from": authorityAccount,
+		"to": authorityAccount,
+		"value": web3.toWei(1, 'wei'),
+   	// use JSON just because we can and it seems extensible
+		"data": web3.fromAscii(d).substring(2) // strip 0x
+	};
+	var tx = eth.sendTransaction(txObj);
 	// include this tx hash within 'extraData' in block if our authoritative miner wins.
-	// prefix sigHeaderChunk with tx hash substring for single-query validation.
-	if (!miner.setExtra(tx.substring(0,8)+sigHeaderChunk)) {
+	// prefix sig_part1 with tx hash substring for single-query validation.
+	if (!miner.setExtra(tx.substring(0,8)+sig_part1)) {
 		console.log("tx2poa", "AUTHORITY", "ERROR", "failed to set miner extra", tx, "becoming a Minion instead...");
 		tx = "err";
 		miner.stop(); // TODO: handle me better maybe
 	} else {
 		console.log("tx2poa", "AUTHORITY", "OK", tx, txObj);
+		status = "success";
 	}
+
+	return {
+		"txhash": tx,
+		"tx": txObj,
+		"status": status
+	};
 }
 
 // ensure there is an account and that it is unlocked
 function ensureAuthorityAccount() {
+	console.log("ensureing auth");
 	var authorityAccount;
+
 	if (eth.accounts.length === 0) {
 		// FIXME: method undefined error
 			// exit; // sanity check
@@ -149,33 +196,37 @@ function ensureAuthorityAccount() {
 // The function also validates the authority of all incoming blocks.
 // FIXME: it might block the normal shutdown mechanism for a geth client
 function runAuthority() {
-	if (tx === "err") {
-			admin.sleepBlocks(1);
-		runMinion();
-	}
+	// TODO handle if was an error posting poa tx
+	// if (tx === "err") {
+	// 		admin.sleepBlocks(1);
+	// 	runMinion();
+	// }
 	if (ensureOrIgnoreCurrentBlockAuthority()) {
 		postAuthorityDemonstration();
 	} else {
-		// most recent block was invalid and was purged
-		// check if latest poa tx is still pending or was included in the block that was purged
-		var pending = eth.pendingTransactions();
-		var reuseTx = false;
-		if (pending.length > 0) {
-			for (var i = 0; i < pending.length-1; i++) {
-				if (pending[i].hash === tx) {
-					reuseTx = true;
-					break;
-				}
-			}
-		}
-		// if poa tx was not included and thus removed with the purged invalid block, resend it
-		if (reuseTx) {
-			console.log("tx2poa", "AUTHORITY", "RESENDING", txObj);
-			eth.resend(txObj);
-		} else {
-			// otherwise just post a new poa tx
-			postAuthorityDemonstration();
-		}
+		// FIXME maybe
+		postAuthorityDemonstration();
+
+		// // most recent block was invalid and was purged
+		// // check if latest poa tx is still pending or was included in the block that was purged
+		// var pending = eth.pendingTransactions();
+		// var reuseTx = false;
+		// if (pending.length > 0) {
+		// 	for (var i = 0; i < pending.length-1; i++) {
+		// 		if (pending[i].hash === tx) {
+		// 			reuseTx = true;
+		// 			break;
+		// 		}
+		// 	}
+		// }
+		// // if poa tx was not included and thus removed with the purged invalid block, resend it
+		// if (reuseTx) {
+		// 	console.log("tx2poa", "AUTHORITY", "RESENDING", txObj);
+		// 	eth.resend(txObj);
+		// } else {
+		// 	// otherwise just post a new poa tx
+		// 	postAuthorityDemonstration();
+		// }
 	}
 	admin.sleepBlocks(1);
 	runAuthority();
