@@ -1,8 +1,12 @@
+An example __authority node__ config: [./auth-blue](./auth-blue)
+An example __minion node__ config: [./min-gree](./min-green)
+
 ## Run it
 
 - depends on changes from https://github.com/ethereumproject/go-ethereum/pull/573
 - depends on changes from https://github.com/ethereumproject/go-ethereum/pull/566
-The /_chain_/geth binaries are for Darwin.
+
+The /_chain_/geth binaries are for Darwin. To rebuild them just do like normal from the go package path, then `cd sidekick-poc && for d in ./*-*; do cp $(which geth) "$d"/geth; done`
 
 
 ```shell
@@ -24,3 +28,5 @@ git clone https://github.com/ETCDEVTeam/sidekick-poc.git
 cd sidekick-poc
 homerun -dir . -excludedirs=".git,sidekick.d"
 ```
+
+Examples of output are in [chains.stdout](./chains.stdout) and [homerun.log](./homerun.log).
