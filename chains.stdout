@@ -1,0 +1,2589 @@
+
+==> auth-blue/stdout.log <==
+
+==> auth-red/stdout.log <==
+
+==> min-green/stdout.log <==
+
+==> min-orange/stdout.log <==
+
+==> min-purple/stdout.log <==
+
+==> min-yellow/stdout.log <==
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: SUCCESS(initialized)
+
+    eth_blockNumber: 0
+    etherbase: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: SUCCESS(initialized)
+
+    eth_blockNumber: 0
+    etherbase: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS(genesis)
+
+    block_number: 0
+    block_hash: 0xce285c...
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 0
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x66f494...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x02df6c66588514745aca0913c900e2e00b498859cb9ac5a3af898416b708f6687b999dfba26784f8c86fb6f1f3cb786ba39913d40d00ec5431ef2979273b8a6e1c
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 0
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x44e09d...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 1
+    block_number: 1
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 1
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x4af960...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x21bf2d8ae162fb400ba28db676b273be88661463db5ab3ff903be3a7e64f5ebe2807b18c589e498ce18ea858caa7877edb7f91903d9ff177dffbc83e2c2f2b921c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 1
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xd7a10d...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 2
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x583b55...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 2
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x8b329f...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x5d5569aeaef2671642484ee79de68ac1f3d6b508f7428ed80cf098f65ae1a1a538c3a2ec6a09041bd01b3bab3106a7a93e0a29fb8663e30d3f0ecc10863612c31c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 2
+    block_number: 2
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 3
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x94f687...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xe5a204c4d1d22b96725ce50c76f98ba4cffd5c188b9618e389972fe18dddb68f0f899a3bc6ba906ed31c42ee85921b70039866ab42f884df3fafab6cc7d0e1d81b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 3
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x8be28d...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 3
+    block_number: 3
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 4
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x5b2b67...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 4
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x14e5e2...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xe62c4c4c026ea00393189e4eb6d320c2220424cf2e1368a80ad7aa381ac1c0ed51f68c0e9abf397b2679aee46da3d6058e2413a470dbc88bf3073bd525a828a51c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 4
+    block_number: 4
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x1755d2...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 5
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x45e0e0...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xc0ad93cc4b9c4898299a98125635bfde77b63feff5c07d13bb5a67ef3b80af0e512e49c166c3e1754f926bf20fb73ec1b9909c541eccd9556af8c6b7f4d755dd1c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 5
+    block_number: 5
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 6
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x1704f0...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x0d07f004fc5d4c8f099c644a26281897e93f2c4b6c0ec99c550a7d5948056a87511c692acdac78a5fcabb50d15f1640aa32d5d02563808f3ed0019a01de2f6ee1c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 6
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x53a43d...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xd8519efe95a9aa7a1244688e4b449ede0d516438f55d9966ce8a0e4a85a5887723180ac1b3bd1fd2e56b16a8e30d28738ed9a429cb5522b802b0c19af01c688b1c
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 6
+    block_number: 6
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 8
+    block_number: 7
+    block_hash: 0x4b42ee...
+    signature: 0x0d07f004fc5d4c8f099c644a26281897e93f2c4b6c0ec99c550a7d5948056a87511c692acdac78a5fcabb50d15f1640aa32d5d02563808f3ed0019a01de2f6ee1c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 7
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x408177...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x7cc16a00dff5f6739a7aeb77bf734f642b0f3be17dfdc827a66f48c1906aa4534c9603451f7356f5d54d54328699572acbf994a56e33cfef0c8f46df55cb5cb61b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 7
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xd21ece...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x3a23427116aefeb36ca0bcebacbeb038881517e9968dbd9a567e0e08681c4a9c4d758cd6b90897928f66dbc3d168560bc86f8dba7c2b1c45507b3d8c72a928451c
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 7
+    block_number: 7
+    block_hash: 0x4b42ee...
+    signature: 0x0d07f004fc5d4c8f099c644a26281897e93f2c4b6c0ec99c550a7d5948056a87511c692acdac78a5fcabb50d15f1640aa32d5d02563808f3ed0019a01de2f6ee1c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 7
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x97884a...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xda22498a3c7501ed424f0d8ad88b784d4ab66f196127422c4f933ef162732b4262dbe8fab3d89f76144a0b7a01ace369481ed5b1d15cdc30ee6bea13af9c28551b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 7
+    block_number: 7
+    block_hash: 0x4b42ee...
+    signature: 0x0d07f004fc5d4c8f099c644a26281897e93f2c4b6c0ec99c550a7d5948056a87511c692acdac78a5fcabb50d15f1640aa32d5d02563808f3ed0019a01de2f6ee1c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 7
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x3408d2...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 8
+    block_number: 8
+    block_hash: 0xf98ec8...
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 8
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x83bb8c...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xdf0a03b22cb45e704782d190d0cba315e9462f4c715e5ea21eb7aae392429afb58091beb88d9805de45437824e9aaaa18eeaa9281bd24a4aa67d7312de421bc81b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 8
+    block_number: 8
+    block_hash: 0xf98ec8...
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 8
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x7b2c80...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x49a3785a9eda3e05f7edc8dbfb5574624dd0b531997d153f9ed4c8df08fae3950dec117f80cad8e282174ebf7ce0519a821d7f983bf8b03d38363ab9881d5f021b
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 8
+    block_number: 8
+    block_hash: 0xf98ec8...
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 9
+    block_number: 9
+    block_hash: 0xfb0afe...
+    signature: 0xdf0a03b22cb45e704782d190d0cba315e9462f4c715e5ea21eb7aae392429afb58091beb88d9805de45437824e9aaaa18eeaa9281bd24a4aa67d7312de421bc81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 9
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x1b72f8...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 9
+    block_number: 9
+    block_hash: 0xfb0afe...
+    signature: 0xdf0a03b22cb45e704782d190d0cba315e9462f4c715e5ea21eb7aae392429afb58091beb88d9805de45437824e9aaaa18eeaa9281bd24a4aa67d7312de421bc81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 9
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xf70f36...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x8cb95bf4151cb267d5867bba6693f68ac7777e8bf6ea6a64975c3f2250d8bf2b487198e80d4d74e5069506bf1872d13e070d4a41adceeb1551f3207ab6acefbf1c
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 8
+    block_hash: 0xdda473...
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 8
+    block_number: 8
+    block_hash: 0xf98ec8...
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 9
+    block_number: 9
+    block_hash: 0xfb0afe...
+    signature: 0xdf0a03b22cb45e704782d190d0cba315e9462f4c715e5ea21eb7aae392429afb58091beb88d9805de45437824e9aaaa18eeaa9281bd24a4aa67d7312de421bc81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 10
+    block_number: 10
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 10
+    block_number: 10
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 10
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x687f69...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 10
+    block_number: 10
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 10
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xb2be28...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x3077f7e0f0629ed058c6e8d99ac46b51b3384e91696718335c955e660441d4554423d55871090e4c22e2879579bb6f60fdc3ed927a6e79c26835a83d29886c461c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 10
+    block_number: 10
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 10
+    block_number: 10
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 11
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xd439d3...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xcce34281e3f05811c4b918357292f087e9feef92f030d72bd0984b09287723983b51eaeee627ba7fbc1c51fd9225f70ab43d18238866c57aaae7ac5cf1c284551c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 11
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xf7ee20...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 11
+    block_number: 11
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 12
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x37ec53...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 12
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x8ef935...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x2d8a0b92485cba86ff5ecf3e262400ddcad12d977736a6c81eb149077a04da552bf2402347d06da25907a93a8ae9993a7a496a7ffd81ca26669e4a0fc02fe8801c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 12
+    block_number: 12
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 13
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xaa66fb...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 13
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xbf695c...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xd2f4aa394d2bf0049aace7dfc1c0ef6bc14a98a18c046e1e6e79ef9a9d41cee413d17db432c5bcbc1c0eaf9180e09d2f1238703d729d498d4099fbadb48383ba1c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 14
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xd42fbe...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 14
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x40f038...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x26b97d009e2a4acbf63b36304e5c62ebc8f80be6e098259f3e223f03752362c61b5c796d911bebe2227072f2afbd24a38036800d2ec0143aefe1bffe3fc8af661b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 15
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x6b98d4...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x24bdcaffc1829660f847f497409743b13b04e8e93149db92e18fee921e7597ac2fc24c114479819b2bb529e595aa72594d5b76a45be0b0466dc473922b9b5d941b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 15
+    block_number: 15
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 15
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x882293...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 18
+    block_hash: 0xd271c1...
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 17
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x1240f5...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xa2a45abf295232447f6a083fd3509a3ff55b0a9266d8108f59d887a241d5afc81b716aa0a1487f324569fe74bfd064671c87595d30d22873a1610c910021768c1b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 16
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x2512df...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x15d1c394cad4ca5d6a8cfdbbdb0b45bd0e3df66256ea64f64b7926a62cdeedb417b6a9fee083aff9daebe506cb09feb80d2dde8d9fca349a71f340d05a13f5d71b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 16
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xa4a459...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x8c3858aefa5511e8db66187ef0956a3dd0aa1ab46041b41a3c43a230c9b41c151ba5e720fc8047d5f98c5cd3747b41cf24520bf97dd423ec9a1bb837f73cbadd1c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 16
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x66b1ed...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x03fc9f480554c6691628223c045c1e1da6112de40f8bbca015971a85d5a0477654f5c3cffb078510bf8778bd51247da3c98f4d2733309b6cfbf5aeb698757f2d1b
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 16
+    block_number: 16
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 16
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xdf0f15...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 17
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x5792f3...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 17
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x2e8deb...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x433882881e4a5555b78ebc7ff1ca7cf038173f79ceef13829e32463e03abb8484d1990b0f7082637d2138d375a938acde614deac58447122b36fcbd22279a99e1b
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 17
+    block_number: 17
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 18
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x095822...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x6e76a7055ad412fd02b68fab0d6d64b554e678182c1242149e8395c0f612c8174d56c7e52e2c9f4d2323e3fddaf3748bb880252d5418cf44e6ab151113f88e821c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 18
+    block_number: 18
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 18
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x9dd140...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 19
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x6a5c12...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x9dbf894975220758f34c80e560c917de50cfd5f9187bf3fdd5a05eba6979ab983fffcdc8061990b9314adc8232a858edee60c15210c6e2d0d0bae24234b6f2db1b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 19
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x52c30b...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 19
+    block_number: 19
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 20
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x83c024...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 20
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xa81f06...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x24375a9c1a48b97919fa08a1882d62d98d584fa9eb2ab94e6402cbce9d67dbf31fe4cf242f010f103a9c24f610f28fa9792753ec3ac411b751fc96faf43cc7841c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 20
+    block_number: 20
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 21
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x0a25b1...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 21
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xe2639e...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x393cabf1c2a5468fdd7e07d5d7a8618772a60993614bdcccba3b7198770aa5594cbb1afff2d1495031107feb2fee7f77e5635c0d00753916c4bd923bb2fa31991c
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 21
+    block_number: 21
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 22
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0x6cbffb...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 22
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0xe95477...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x4368a05ecb2ed2a714c1c1184613c045af2932bee7f6257041cd2cce89c377945010c7507f4ee7e198686dddefa792c1c336b5506047d9f036517158a96495051b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 22
+    block_number: 22
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 23
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xd0ba23...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 23
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x9e0dae...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x27b2e6e017727842218ec3020e0b03e00ff0bd841b6ed13f27af3f070ffdac535daa1281cef28e8c8b95b5f48e829e82a34fc1efa8b476726747c441577dce8d1b
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> auth-red/stdout.log <==
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[e9b23b[::]:30305]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 24
+    authority: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    tx_hash: 0xb6ba56...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x3a9595108403ac8ead1ae70c0c64c0f917db82f00400920352a2584b2c267f2256c76cfc88a8d3f5254509ce78dfbd9e82463274b05f78f882df93fa0928c7ba1c
+
+==> auth-blue/stdout.log <==
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+AUTHORITY@[2ff7e3[::]:30303]
+ 
+    AUTHORITY: POST
+
+    eth_blockNumber: 24
+    authority: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    tx_hash: 0x704bab...
+    tx: [object Object]
+    data: [object Object]
+    signature: 0x655543da4931f1e14381589ea1bd13603e449f67a0b71fc72b687722d883c31025d80f071234d79ace30e77cfdac91ccba817fd6990093f23797b1a8d0a834f91b
+
+==> min-orange/stdout.log <==
+
+MINION@[5ddc1f[::]:30311]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-purple/stdout.log <==
+
+MINION@[5ca117[::]:30313]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-yellow/stdout.log <==
+
+MINION@[347256[::]:30307]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+==> min-green/stdout.log <==
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3

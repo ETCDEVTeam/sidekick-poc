@@ -12,8 +12,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 1
     block_number: 1
-    block_hash: 0x3e8f1c...
-    signature: 0xe06b5c3c4fecf8e56983c374cf13957447a7d563581d274f85bfca20b4faa50f234fc0b7a6da7df0ddba5870703c1bf6bf606d0334276554f7c7b239801f92861c
+    block_hash: 0x316608...
+    signature: 0xdaa1b85d090dbf75e478599ea2423fca916ef1da61aca87b5a4d40c0545bb39801618a59b2e4454da65c5c16a2babb29a363b1f8fe17d92def8b501db4e01a771c
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -23,10 +23,10 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 2
     block_number: 2
-    block_hash: 0x52f438...
-    signature: 0xe4846b895f9bf758a897d75a0f6b90787c5af3af502e3e1ed122881c623fc0ba36524d6d46a529a4afddd4456051ee3c3b5b40a53311ee4228e2ef939c62225b1b
-    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    block_hash: 0xb27d2f...
+    signature: 0x035ae3a5ff341ba2f3adffbb4140d4e9cbf923d6499f08f7d85c1ed2713ac8943db0bfae3fd1cb694832ec1349bbf01a0731cefe37ac36eff30ba0383cea74081b
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
 
 MINION@[6838df[::]:30309]
  
@@ -34,8 +34,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 3
     block_number: 3
-    block_hash: 0x7eb8f5...
-    signature: 0xeeb9cc4447ccb1837b2cd66bd794ec14e537589ea88e313ed0030ef8c4f26bde150e9b9473829ef60be481fe012cd5aaf86baf88f7f2e9ace4c5a590ce8b96ce1c
+    block_hash: 0x6959dc...
+    signature: 0xcc6e8d59443a4e81be5c8edb5523d63508b2de2c853ef2774963efc446a48e7b7e3f6fef36315839fbd38a64e45cf541e80d0d0b2bc6e2af194aa2bcf4eb9f541c
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -45,8 +45,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 4
     block_number: 4
-    block_hash: 0x6e88fe...
-    signature: 0xe8f24fd516a5e58108a28465e55439f93af68e44d353b763760f7b3eb033db035f72e478e11084a67ad0febd2f3b450b747ee8ac55e3bad878b720c3e213d9081c
+    block_hash: 0x7e8110...
+    signature: 0x1da3c99dcb52b188f50639d8badce0b43764afa225684e9e26c231fd29d7faae402bede63b5510cc3b7d99942c9d717409fb6eee69a608c1e68f4552d743a3671c
     recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
     miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
 
@@ -56,8 +56,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 5
     block_number: 5
-    block_hash: 0xabf622...
-    signature: 0x3bdd8991db89f80b0a89bfafffa4bd5071ef21c2a18e48a94584c87afa935e536a11dd5be941433a5889475630bd32b36ad5dd7048994b8fccd944bd41b58e111c
+    block_hash: 0x6628e4...
+    signature: 0xe07f18239fc311b833be4f152ed69f6355622be247f8533759fc095e274d9b4b304f8079886f9dc53029eab972b1d81dfb47eda63a2d451647a1633052b651e01c
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -67,21 +67,17 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 6
     block_number: 6
-    block_hash: 0xb4391c...
-    signature: 0xd5c63347677df6dfbaf6011ab74b46a7b846ccdb947c6f47a31f53db57b5a043793f23d59ff42f7dcafac689d19eb6e3411820b90472ce7b1763993b029e136a1b
-    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
-    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    block_hash: 0x6bee16...
+    signature: 0x988592291d2b0992367c2bab0f043c509ffac99176b8d4072a2102d6408f3bbf5406640a1575e6c56969cadc0181d0aefa66673ef7e8964fd78b0ed187fefbb71c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
 MINION@[6838df[::]:30309]
  
-    VALIDATE: SUCCESS
+    VALIDATE: FAIL(no transactions)
 
-    eth_blockNumber: 7
-    block_number: 7
-    block_hash: 0x131f56...
-    signature: 0x9005f55f82acf57a2b3037a3b38834125dde62e2d0d68f866be2fb1d242769567ac7463e7efae7781601504ea4222a35f996e0b9993931e7cb281b50822129ea1c
-    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    block_number: 8
+    block_hash: 0xdda473...
 
 MINION@[6838df[::]:30309]
  
@@ -89,10 +85,10 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 8
     block_number: 8
-    block_hash: 0x85d57a...
-    signature: 0xd6f121dec0d2f9fcb361c89bd77e18357c688e875d1649faf04d3361d7a40de72e2b89f7f070fee6894a267ee253a0fc1ceb5d88d20b39a458dc1d7b7e0adfc21c
-    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    block_hash: 0xf98ec8...
+    signature: 0xf09ad4568afdffc0361660242b17243d99470d33b902254978c41394191275f54c72f0a4b82f89fbf50f6d9abfea6e48d524c9076ab663f7491f641e24e01f011c
+    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
 
 MINION@[6838df[::]:30309]
  
@@ -100,8 +96,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 9
     block_number: 9
-    block_hash: 0x0c18a9...
-    signature: 0xe7094089e7ccd1c3717cb3e95789f9847abcf84a67a5ba12c652dc4f6b868bde171b187dd538f581d20ff5d0348cee33804765e715fbdd64e60e1cc6e1f3c6221c
+    block_hash: 0xfb0afe...
+    signature: 0xdf0a03b22cb45e704782d190d0cba315e9462f4c715e5ea21eb7aae392429afb58091beb88d9805de45437824e9aaaa18eeaa9281bd24a4aa67d7312de421bc81b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -111,8 +107,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 10
     block_number: 10
-    block_hash: 0x772498...
-    signature: 0x0c1a40d58f20466f5b7fbf62319e662803855b3241f0ba7b5ddfe433869649f61c73fd65d82c393099efbae43db8869700934b28024cc0b1093cc2c8a37efd4d1b
+    block_hash: 0xbcdc86...
+    signature: 0x3bc1777b8a3efa7835d74446b491807d143665c77a25d040f463fde28ed18257309d698a817e3915bc72883756a060ae97b7866f959f7a7d929d7556030772b81b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -122,8 +118,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 11
     block_number: 11
-    block_hash: 0xb7483e...
-    signature: 0x8db33d0b8efb8b5de9161a96fd38a150567006626abbc352766e09c487ff1c373bef9852cac07c0cf660db57f3668596dde7a6f82304bd51ea2bfd3fcac22f741c
+    block_hash: 0x232633...
+    signature: 0xb3e94176db6df244b7221878066aa87dff676b1f653ec15358a6612650aced2032daf85f77320c6427681f06c4bb0ac48c08cd5c50a4f4bdc13f14975440dff51b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -133,37 +129,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 12
     block_number: 12
-    block_hash: 0xd14f72...
-    signature: 0x1e7315bcffe51729e05d4dbffe61bd9304784ace3e72e081e3223878f5119cc308b60fb41ca10d3e188d5fbcacb140acdeb47b03fcb624fe97d20ac97b6c654c1c
-    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-
-MINION@[6838df[::]:30309]
- 
-    VALIDATE: SUCCESS
-
-    eth_blockNumber: 13
-    block_number: 13
-    block_hash: 0xf02993...
-    signature: 0x914d4d9fadc3e2eb9fc4277990978fcdf871cd7a2218fcd60c7c85853b1a3bbb0282ef41bc5ad32cb20c293f6c073125c2818147945617d48f4b4a5317044a2d1c
-    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
-
-MINION@[6838df[::]:30309]
- 
-    VALIDATE: FAIL(no transactions)
-
-    block_number: 14
-    block_hash: 0x6b5985...
-
-MINION@[6838df[::]:30309]
- 
-    VALIDATE: SUCCESS
-
-    eth_blockNumber: 14
-    block_number: 14
-    block_hash: 0x8d49f2...
-    signature: 0x9ab54a8a9af3dddb60b021e1dbbad00e4b4e72056771d612a31dc64363c148ea32729779c4482ed2ab9acb7c205b9f9d2aa3458c048510fab8f8ddf4075642581b
+    block_hash: 0x9bb81c...
+    signature: 0x1bbf193a711034e1cda5ee7fcd94b872caad66c2a06ed98cf080fe72c299440407f90dc7a6abca113f4517fca9c8ce830ae9bfd9dc2cb522d751f37e1ea023e21c
     recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
     miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
 
@@ -171,10 +138,32 @@ MINION@[6838df[::]:30309]
  
     VALIDATE: SUCCESS
 
+    eth_blockNumber: 13
+    block_number: 13
+    block_hash: 0x4cbfd0...
+    signature: 0xad79a0237dbb5df56a2c5eb92ef1904d6a7d6b068ebc7abf5a04574a34c0655b11787e8b4c28ee415d4fdfc84979b2cffe2117145928947cfe0ff194b31717431c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 14
+    block_number: 14
+    block_hash: 0x5efe57...
+    signature: 0x6cb5e9b553e98b94d57337ec7cead9e9c769a3a84f2239ae3bab2275180836b37f52ff7ffa3760b2f32fe6ef6e4108f45bb61fbc7ee22e0ca1cbe889658406101c
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
     eth_blockNumber: 15
     block_number: 15
-    block_hash: 0x7d5a5a...
-    signature: 0x8157bea62a63f22305914a7847187a3ceb837d8f21c5ba4af66fffc82d6c70212dd534b73ff03c4f8c4ce054af2e2ab000359e9b7bd9b6199fc01d29e44b0acc1c
+    block_hash: 0xc0066f...
+    signature: 0xf76ecdf73d5a9b63ca98c8080ca584ebe8c73597dbc122c1958e34dfd4246b4107f527a0acddf1d2b79272acfc8b26cb6f922935eee967876b9f975f40ef9f251c
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -184,10 +173,17 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 16
     block_number: 16
-    block_hash: 0x902cbd...
-    signature: 0xf6d3b2110e922841f37ab76253b7db4dd5ed65e4851706cc9116e287f1a41b2a1b315a0bd2ec36943720766c14695b5a5950b46db923ad9a9ce359318ccbe0511b
+    block_hash: 0xdbd0b1...
+    signature: 0xc7c994759f73b4cf8817ec992a453cf91aff55dc54f930309bf8ac58e7860ea50b8f185d1f7eee805d445c018754bf76f7199f812a34d48f19c868ce73355b281c
     recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
     miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: FAIL(no transactions)
+
+    block_number: 17
+    block_hash: 0x943641...
 
 MINION@[6838df[::]:30309]
  
@@ -195,8 +191,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 17
     block_number: 17
-    block_hash: 0x6db9a9...
-    signature: 0x1978834a182ee38a531745448ef70e2b2c1d482bef6327a933c89198ca45872f4d60a4f288422c8cbde8fff4911b24a0dc6d356dc1d7450f68b34cc1dd68019e1c
+    block_hash: 0xa05011...
+    signature: 0xbc8033cea3835e32b51dc4281d4ed659aa8550e80dddc04548eaadb9d717d55238944d939fe18f83cc70700a8e05164feda9be0eba60178d2635f00fb43c93051b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -206,8 +202,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 18
     block_number: 18
-    block_hash: 0xa2abdf...
-    signature: 0xce865bd3e74d4dadb25121c9419bfb7ece2ac91d533b22c55acba3f209d59ad650338910c31f6028c798452ada0289a2957dbaaaeb3ef14c5f574484d7dc0e191c
+    block_hash: 0x28de58...
+    signature: 0xfd35c51fa6452c3e786f268f45bd9243132c50a1a402b61d02eb37f271160e3021e92cad39d306e8041f95c05872ca3d8af822387388673131e5d6faf0ce31591c
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -217,8 +213,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 19
     block_number: 19
-    block_hash: 0xbc1c01...
-    signature: 0x15970da3d7556cbff78bf307d465303d8c4c2c29c85b2c795b291112a0c20d45347e5dacc8ebad7696d0fd7fc518b5644e3127342852008b07d314469d7f125c1c
+    block_hash: 0x966e7d...
+    signature: 0x62078673aa4b25df3799cd3ee1b23e8dece98d203ed9197102bc1b5aa74f50ff7deb25ccaa2c67b67f89a51ae1c56eb7d38724ba8a55676f2bfaa058dd0b3ffb1b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -228,8 +224,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 20
     block_number: 20
-    block_hash: 0xa3310e...
-    signature: 0x9b878d1d6081d1bd86d344851cce5fd56b749f3f0ed6ebac1afc26dd5082dedc188658ce71d20e90efde1d13e6f68060ce8c1cadbdd188eed6ce610a40a26efc1b
+    block_hash: 0xeae935...
+    signature: 0xb69a9df7c12b70bb0abd34d79f1aaaf069266dc9ac68fe95b4dfcdc3eee29bc36d659dccbb49f59e9fd61b784beed290f9fd7f50e7e65b494dc33667683a672d1b
     recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
     miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
 
@@ -239,8 +235,8 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 21
     block_number: 21
-    block_hash: 0x8257f3...
-    signature: 0xf7fbc567f62d0cd7027364558f92cf967e7683e98cd8e24cc10d027548813f7505e2d7621fe7a181dd8b5e0091b62a31021165779d5ef9f981a599947a60e8e01b
+    block_hash: 0xa75a15...
+    signature: 0x77e40e28c808a9498ed627b86f43c2eb3caae9f2459e96205c99beb02c1ef8777147d29b4acb4e658d058bc262f76d6f47ebdfabdc8bdeab10eb0b3aa9ee00bb1b
     recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
     miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
 
@@ -250,7 +246,29 @@ MINION@[6838df[::]:30309]
 
     eth_blockNumber: 22
     block_number: 22
-    block_hash: 0x4f9728...
-    signature: 0x3ba3e059256bb6adfbc301bccf40d5c72367f78edea049729e44c83f63f28b0c60e4d91d04c2409e03fbe98d876d3614cada90ee5d76db3b2b20c056ac3197e01c
-    recovered: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
-    miner: 0x915f6add57fe39189dfd7b4801a9dcbf6d66ae94
+    block_hash: 0x3107fa...
+    signature: 0x21f3892dc7bcdb42c56731f4c0513e3770866099f64049a437adfd677b79d60275b8cfde86eb735e401d5877f7303c882e44245b659faceb6aaf59a163bdb7081b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 23
+    block_number: 23
+    block_hash: 0x77f6d3...
+    signature: 0xd248c16592d7d7d568a8e1090adffc69c962eb02ed17b7450474e1f573fe4cce21e90b92b97adf990963706505f69ceedc7a72a44fbd3848805a1734a0ec72851b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+
+MINION@[6838df[::]:30309]
+ 
+    VALIDATE: SUCCESS
+
+    eth_blockNumber: 24
+    block_number: 24
+    block_hash: 0x161572...
+    signature: 0x42a8f2317aab3dd1d4c56be63d95cbbea9a49beeee5ac837c2ca17c5c3d78c6967262fd88919b83fbdde16681ee1ef0ed59ded41348f613896889d09f9d731641b
+    recovered: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
+    miner: 0xfedb3a0fb00083774e68bf8ba72d8b9bbe5731d3
