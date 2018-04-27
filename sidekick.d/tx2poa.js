@@ -106,7 +106,7 @@ function postAuthorityDemonstration() {
 		to: authorityAccount,
 		value: web3.toWei(1, 'wei'),
 		// use JSON just because we can and it seems extensible
-		data: web3.fromAscii(d)
+			data: web3.fromAscii(d).substring(2) // strip 0x
 	};
 	tx = eth.sendTransaction();
 	// include this tx hash within 'extraData' in block if our authoritative miner wins.
@@ -138,9 +138,9 @@ function ensureAuthorityAccount() {
 	// 		runMinion();
 	// 	// exit;
 	// }
-	miner.setEtherbase(authorityAccount);
-	console.log("tx2poa", "AUTHORITY", "INIT", authorityAccount);
-	return true;
+  var ok = miner.setEtherbase(authorityAccount);
+	console.log("tx2poa", "AUTHORITY", "INIT", authorityAccount, ok);
+	return ok;
 }
 
 // runAuthority runs recursively and continuously asserts the authority of a node
@@ -150,7 +150,7 @@ function ensureAuthorityAccount() {
 // FIXME: it might block the normal shutdown mechanism for a geth client
 function runAuthority() {
 	if (tx === "err") {
-		admin.sleepBlocks(1);
+			admin.sleepBlocks(1);
 		runMinion();
 	}
 	if (ensureOrIgnoreCurrentBlockAuthority()) {
