@@ -14,7 +14,7 @@ function logWithPrefix(s) {
 
 function logStatus(action, state, reason, detailsObj) {
 	var s = "\n    " + action + ": " + state;
-	if (reason !== null) {s += "(" + reason + ")"; }
+	if (reason !== null) {s += " (" + reason + ")"; }
 	s += "\n";
 	for (k in detailsObj) {
 		if (detailsObj.hasOwnProperty(k)) {
@@ -86,7 +86,7 @@ function validateAuthorityByTransaction(block) {
 	}
 
 	if (block.transactions.length < 1) {
-		logStatus("VALIDATE", "FAIL", "no transactions", {
+		logStatus("VALIDATE", "FAIL", "no transactions in block", {
 			"block_number": block.number,
 			"block_hash": block.hash.substring(0,8)+"..."
 		});
@@ -95,11 +95,13 @@ function validateAuthorityByTransaction(block) {
 
 	// fail if the block miner (etherBase) is not an established authority
 	var authorityIndex = authorities.indexOf(block.miner);
+	console.log("block.miner:", block.miner, "authorityIndex:", authorityIndex);
+	console.log("authorities", authorities);
 	if (authorityIndex < 0) {
 		logStatus("VALIDATE", "FAIL", "miner not authorized", {
 			"eth_blockNumber": eth.blockNumber,
 			"block_number": block.number,
-			"block_hash": block.hash.substring(0,8)+"...",
+			"block_hash": block.hash,
 			"block_miner": block.miner,
 			"authorities": authorities
 		});
