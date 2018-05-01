@@ -1,0 +1,14 @@
+for (var i = eth.blockNumber; i>0; i--) {
+console.log(eth.getBlock(i).miner);
+}
+eth.blockNumber;
+miner.stop();
+eth.mining;
+miner.etherbase;
+miner.etherBase;
+miner
+miner.setEtherbase();
+eth.accounts;
+admin.nodeInfo.enode;
+admin.peers;
+admin.peers
