@@ -16,14 +16,7 @@ check_or_install_geth() {
     go get -v github.com/ethereumproject/go-ethereum/...
     go install github.com/ethereumrpoject/cmd/geth
   fi
+  echo "Note: to update PoC geths, use the cpgeth script or an equivalent"
 }
 check_or_install_homerun
 check_or_install_geth
-
-if [[ "$1" -nq "-geth" ]]; then
-  for d in ./*-*; do
-    cp $(which geth) "$d"/geth
-  done
-else
-  echo "Not updating PoC geths. Use '-geth' flag to copy $(which geth) to PoC node subdirectories."
-fi
