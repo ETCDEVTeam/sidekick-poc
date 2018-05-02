@@ -22,6 +22,8 @@ cd sidekick-poc
 
 - `homerun` @ github.com/ethereumproject/homerun
 
+- Won't work on Windows because path separators. You're on your own.
+
 ----
 
 Examples of output are in [chains.stdout](./chains.stdout) and [homerun.log](./homerun.log).
