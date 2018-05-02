@@ -7,8 +7,12 @@ An example __minion node__ config: [./min-green](./min-green)
 ```shell
 git clone https://github.com/ETCDEVTeam/sidekick-poc.git
 cd sidekick-poc
-./setup
+./deps # ensure or install homerun and geth
+./cpgeth # copy system geth to this project's subdirectories for use by each node
+./ownpath # adjust hardcode from flags.conf files to use your own working directory path
 ./run
+
+./reset # clear logs and reset chaindata for each node
 ```
 
 ## Dependencies
