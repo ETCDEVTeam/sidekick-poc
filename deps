@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# check for deps
+check_or_install_homerun() {
+    if hash homerun 2>/dev/null; then
+      echo "OK: homerun installed"
+    else
+      go get -v github.com/ethereumproject/homerun/...
+      go install github.com/ethereumrproject/homerun
+    fi
+}
+check_or_install_geth() {
+  if hash geth 2>/dev/null; then
+    echo "OK: geth installed"
+  else
+    go get -v github.com/ethereumproject/go-ethereum/...
+    go install github.com/ethereumrpoject/cmd/geth
+  fi
+}
+check_or_install_homerun
+check_or_install_geth
+
+if [[ "$1" -nq "-geth" ]]; then
+  for d in ./*-*; do
+    cp $(which geth) "$d"/geth
+  done
+else
+  echo "Not updating PoC geths. Use '-geth' flag to copy $(which geth) to PoC node subdirectories."
+fi
