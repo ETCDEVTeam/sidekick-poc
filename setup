@@ -1,9 +1,0 @@
-
-
-
-for d in ./*-*; do
-  if [[ "$1" -eq "-cd" ]]; then
-    sed -i "s|/Users/ia/dev/sidekick/poc|$PWD|g" "$d"/flags.conf
-  fi
-  # cp $(which geth) "$d"/geth
-done
