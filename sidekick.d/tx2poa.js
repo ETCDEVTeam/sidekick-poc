@@ -34,7 +34,7 @@ function logStatus(action, state, reason, detailsObj) {
 	logWithPrefix(s);
 }
 
-// findPoaTxData finds the relevant "incomplete proof of authority" transaction in a block and returns it's associated data. 
+// findPoaTxData finds the relevant "incomplete proof of authority" transaction in a block and returns it's associated data.
 // This is called as a part of the block verification function.
 function findPoaTxData(block) {
 	var out = {
@@ -264,7 +264,7 @@ function postAuthorityDemonstration(resendableTxObj) {
 	});
 
 	// set tx hash as miner.ExtraData, relevant in case our miner wins
-	// the tx substring part aids precision of validation by enabling QueryN=1 eth.getTransaction query 
+	// the tx substring part aids precision of validation by enabling QueryN=1 eth.getTransaction query
 	// instead of QueryN <= block.transactions.length
 	if (!miner.setExtra(txh.substring(0,8)+sig_part1)) {
 		logStatus("AUTHORITY", "ERROR", "failed to set miner extra data", {
@@ -346,7 +346,7 @@ function runAuthority(txo) {
 	runAuthority(txo);
 }
 
-// defaultInvalidCallback sets the head to the last known valid block number in case 
+// defaultInvalidCallback sets the head to the last known valid block number in case
 // an incoming block is determined to be invalid.
 var defaultInvalidCallback = function(invalidBlockNumber) {
 	debug.setHead(lastValidBlockNumber);
