@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+disown tail -F ./*-*/stdout.log | grep -v -e '==>'
+
+homerun -dir . -excludedirs "sidekick.d,.git"

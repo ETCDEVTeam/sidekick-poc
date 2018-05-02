@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+# check for deps
+check_or_install_homerun() {
+    if hash homerun 2>/dev/null; then
+      echo "OK: homerun installed"
+    else
+      go get -v github.com/ethereumproject/homerun/...
+      go install github.com/ethereumrproject/homerun
+    fi
+}
+check_or_install_geth() {
+  if hash geth 2>/dev/null; then
+    echo "OK: geth installed"
+  else
+    go get -v github.com/ethereumproject/go-ethereum/...
+    go install github.com/ethereumrpoject/cmd/geth
+  fi
+}
+check_or_install_homerun
+check_or_install_geth
+
+for f in ./*-*/flags.conf; do
+  sed -i "s|/Users/ia/dev/sidekick/poc|$PWD|g" "$f"
+done
