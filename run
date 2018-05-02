@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
-disown tail -F ./*-*/stdout.log | grep -v -e '==>'
+# Use this command to tail the stdout JS console logs.
+# tail -F ./*-*/stdout.log | grep -v -e '==>'
 
 homerun -dir . -excludedirs "sidekick.d,.git"
